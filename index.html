@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Montserrat&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-3.7.1.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+
+<div class="top-menu">
+	<h1>Neon 80s Park</h1>
+</div>
+
+<div class="left-menu">
+	<div class="left-menu-heading">
+		<span id="left-menu-heading-text">Menu</span>
+		<span class="left-menu-toggle" id="left-menu-toggle-id">
+			<span class="toggle-btn-line"></span>
+			<span class="toggle-btn-line"></span>
+			<span class="toggle-btn-line" style="margin-bottom: 0;"></span>
+		</span>
+	</div>
+	<div style="padding: 15px;" id="div-menu-options">
+		<button class="menu-option menu-option-selected" value="mc-home" autofocus>Home</button>
+		<button class="menu-option" value="mc-sports">Neon Sports</button>
+		<button class="menu-option" value="mc-bar">Mixtape Cocktail Bar</button>
+		<button class="menu-option" value="mc-disco">Retro Disco</button>
+		<button class="menu-option" value="mc-dnd">D&D Sessions</button>
+	</div>
+</div>
+
+<div class="main-div">
+	<div class="content-div" id="mc-home">
+		<h3>Welcome to Neon 80s Park</h3>
+		<p>We have the perfect 80s themed entertainment park for you. If you are longing for 80s music, dancing, fashion and games we've got you covered.<br>
+			From classic Dungeons and Dragons events to Roller Discos to glow in the dark soccer the family will be entertained. For adults we have an awesome cocktail bar and a dance club.
+		</p>
+		<p>Our founders believe that the 80s had the best music, movies and fashion. We aim to please our visitors with an unforgetable entertainment experience.</p>
+	</div>
+	<div class="content-div" hidden id="mc-sports">
+		<h3>Glow in the dark sports</h3>
+	</div>
+	<div class="content-div" hidden id="mc-bar">
+		<h3>The Mixtape Cocktail Bar</h3>
+	</div>
+	<div class="content-div" hidden id="mc-disco">
+		<h3>Retro Disco with 80s dance music</h3>
+	</div>
+	<div class="content-div" hidden id="mc-dnd">
+		<h3>Classic Dungeons and Dragons</h3>
+	</div>
+</div>
+
+</body>
+</html>

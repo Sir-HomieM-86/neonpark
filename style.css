@@ -1,0 +1,236 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*
+	Dark blue - #1D2B53
+	Purple - #7E2553
+	Pink - #FF004D
+	Yellow - #FAEF5D
+*/
+
+.top-menu {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 90px;
+	padding: 10px;
+	padding-left: 30px;
+	background-color: #1D2B53;
+	box-sizing: border-box;
+}
+
+.top-menu h1 {
+	display: inline-block;
+	margin: 0;
+	height: 70px;
+	color: #FF004D;
+	border: 5px solid #FF004D;
+	border-radius: 8px;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	transform: skew(-15deg);
+	font-family: "Righteous", sans-serif;
+	font-size: 40px;
+	font-style: normal;
+}
+
+/* main background div */
+
+.main-div {
+	min-height: 100%;
+	margin: 0;
+	padding: 100px;
+	padding-top: 130px;
+	margin-left: 250px;
+	box-sizing: border-box;
+	background-color: #7E2553; /* for browsers that do not have gradients */
+	background: radial-gradient(circle, rgba(250,239,93,1) 0%, rgba(255,0,77,1) 47%, rgba(126,37,83,1) 100%);
+	/*background: linear-gradient(90deg, rgba(126,37,83,1) 20%, rgba(250,239,93,1) 50%, rgba(255,0,77,1) 80%); */
+}
+
+/* left menu css */
+
+.left-menu {
+	position: fixed;
+	top: 90px;
+	left: 0;
+	width: 250px;
+	height: calc(100% - 90px);
+	background-color: #1D2B53;
+	box-sizing: border-box;
+}
+
+/* left menu items */
+
+.left-menu-heading {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: #0e1529; /* darker dark blue*/
+	color: #FF004D;
+	padding: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+.left-menu-toggle {
+	display: inline-block;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	bottom: 5px;
+	width: 30px;
+	border: 3px solid #FF004D;
+	border-radius: 5px;
+	padding: 6px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.toggle-btn-line {
+	display: block;
+	background-color: #FF004D;
+	height: 2px;
+	margin: 0;
+	margin-bottom: 3px;
+}
+
+.menu-option {
+	display: block;
+	width: 100%;
+	color: #FF004D;
+	background-color: #1D2B53;
+	text-align: left;
+	border: none;
+	border-left: 5px solid #FF004D;
+	margin: 0;
+	margin-bottom: 15px;
+	padding-left: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	transform: skew(-15deg);
+	cursor: pointer;
+}
+
+.menu-option:hover, .menu-option:focus {
+	color: #FAEF5D;
+	background-color: #7E2553;
+	outline: none;
+}
+
+.menu-option-selected {
+	color: #FAEF5D;
+	background-color: #7E2553;
+	outline: none;
+	border-left: 5px solid #FAEF5D;
+}
+
+/* left menu classes used to hide the menu */
+
+.hide-div-menu-options {
+	display: none; /* used to hide the menu */
+}
+
+.minimize-left-menu {
+	width: 40px; /* 250px maximized */
+}
+
+.remove-main-div-margin {
+	margin-left: 40px; /* 250px when menu is shown */
+}
+
+/* content div */
+
+.content-div {
+	/*min-height: 500px;*/
+	width: 100%;
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,0.75);
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.content-div h3 {
+	width: 100%;
+	color: #FF004D;
+	padding: 10px;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-size: 48px;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+.content-div p {
+	color: #F5F5F5;
+	padding: 10px;
+	padding-bottom: 20px;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+@media (max-width: 1024px) {
+	.top-menu {
+		/*position: fixed;
+		top: 0;
+		width: 100%;*/
+		height: 50px;
+		padding: 5px;
+		padding-left: 10px;
+		/*text-align: center;*/
+	}
+	
+	.top-menu h1 {
+		height: 40px; /* was 70px */
+		color: #FF004D;
+		border: 2px solid #FF004D;
+		border-radius: 8px;
+		padding: 5px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		transform: skew(-15deg);
+		font-family: "Righteous", sans-serif;
+		font-size: 20px;
+		font-style: normal;
+	}
+	
+	.main-div {
+		padding: 30px;
+		padding-top: 90px;
+		margin-left: 40px; /* mobile remove margin space, so menu overflows on main content*/
+	}
+	
+	.left-menu {
+		top: 50px;
+		height: calc(100% - 50px);
+	}
+	
+	.content-div h3 {
+		padding: 10px;
+		margin: 0;
+		font-family: "Montserrat", sans-serif;
+		font-size: 26px;
+		font-weight: bold;
+	}
+	
+	.content-div p {
+		font-size: 14px;
+	}
+}
+
