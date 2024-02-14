@@ -159,6 +159,7 @@ html, body {
 	background-color: rgba(0,0,0,0.75);
 	padding: 20px;
 	border-radius: 20px;
+	overflow: hidden;
 }
 
 .content-div h3 {
@@ -180,6 +181,36 @@ html, body {
 	font-family: "Montserrat", sans-serif;
 	font-size: 18px;
 	font-weight: bold;
+}
+
+.content-image {
+	display: inline-block;
+	float: right;
+	padding-left: 10px;
+}
+
+.content-image img {
+	border-radius: 10px;
+}
+
+/* specific image styling */
+
+#dnd-pic {
+	height: 602px;
+}
+
+#cocktail-pic {
+	max-width: 797px;
+	width: 100%;
+}
+
+#glow-pic {
+	max-width: 700px;
+	width: 100%;
+}
+
+#party-pic {
+	width: 325px;
 }
 
 
@@ -231,6 +262,29 @@ html, body {
 	
 	.content-div p {
 		font-size: 14px;
+	}
+	
+	.content-image {
+		display: block;
+		float: none;
+		text-align: center;
+		padding-left: 0;
+	}
+	
+	#dnd-pic {
+		height: 250px;
+	}
+	
+	#disco-pic{
+		width: 200px;
+	}
+	
+	#glow-pic {
+		width: 250px;
+	}
+	
+	#party-pic {
+		width: 150px;
 	}
 }
 
